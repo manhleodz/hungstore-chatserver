@@ -13,7 +13,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3002",
+    origin: "http://127.0.0.1:5000",
     methods: ["GET", "POST"],
   },
 });
@@ -35,6 +35,6 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(4040, () => {
-  console.log("SERVER RUNNING");
+server.listen(9090, () => {
+  console.log("SERVER RUNNING ON " + 9090);
 });
