@@ -35,6 +35,6 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(9090, () => {
-  console.log("SERVER RUNNING ON " + 9090);
+server.listen(8080, () => {
+  console.log("SERVER RUNNING ON " + 8080);
 });
